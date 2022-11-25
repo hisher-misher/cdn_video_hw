@@ -1,0 +1,41 @@
+# Окружение
+env
+node_modules
+casperjs
+
+# Кеш
+__pycache__
+*.pyc
+
+# Бекапы редактора
+*~
+
+# Сгенерённое скриптами
+static_collected
+logs
+
+
+# Всякое
+
+.idea/
+wfmdb*.dump
+.DS_Store
+
+# Docker
+.data/
+media/mail_files/
+media/reports/loaded/
+media/agency_avatars/
+media/uploads/templates/
+
+
+.coverage
+htmlcov/
+prof/
+.vscode/settings.json
+*.code-workspace
+.python-version
+
+/wfm/wmf_local_nginx.conf
+version.txt
+

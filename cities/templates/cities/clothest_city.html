@@ -1,0 +1,18 @@
+<h1>Clothest city</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Получить">
+</form>
+
+{% if city1 %}
+    <h3>2 ближайших города</h3>
+    {% if city1.name %}
+        {{ city1.name }}
+    {% endif %}
+    <br>
+    {% if city2.name %}
+        {{ city2.name }}
+    {% endif %}
+{% endif %}

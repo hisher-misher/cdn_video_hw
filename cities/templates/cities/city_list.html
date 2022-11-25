@@ -1,0 +1,27 @@
+<h1>Cities</h1>
+
+<table border="1">
+<thead>
+    <tr>
+    <th>Name</th>
+    <th>x</th>
+    <th>y</th>
+    <th>View</th>
+    <th>Edit</th>
+    <th>Delete</th>
+    </tr>
+</thead>
+<tbody>
+    {% for city in object_list %}
+    <tr>
+    <td>{{ city.name }}</td>
+    <td>{{ city.x_coord }}</td>
+    <td>{{ city.y_coord }}</td>
+    <td><a href="{% url "city_view" city.id %}">view</a></td>
+    <td><a href="{% url "city_edit" city.id %}">edit</a></td>
+    <td><a href="{% url "city_delete" city.id %}">delete</a></td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+
